@@ -24,6 +24,7 @@ const Tabs = (props) => {
           return (
             <Tab
               activeTab={state.activeTab}
+              key={label}
               label={label}
               onClick={onClickTabItem}
             />
