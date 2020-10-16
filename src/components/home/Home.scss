@@ -1,0 +1,53 @@
+@import "../../style/typography.scss";
+
+.Home {
+  .biography-section {
+    font-family: $biographyFont;
+    .home-cursor {
+        color: $yellow;
+    }
+
+    h3 {
+      color: $orange;
+      margin-bottom: 0.5em;
+      .home-cursor {
+        color: $orange;
+      }
+
+      strong {
+        color: $yellow;
+        .home-cursor {
+          color: $yellow;
+        }
+      }
+    }
+
+    h1 {
+      margin: 0;
+      color: $purple;
+      .home-cursor {
+        color: $purple;
+      }
+      strong {
+        color: $aqua;
+        .home-cursor {
+          color: $aqua;
+        }
+      }
+    }
+
+    p {
+      margin: 0;
+      color: $orange;
+      .home-cursor {
+        color: $orange;
+      }
+      strong {
+        color: $yellow;
+        .home-cursor {
+          color: $yellow;
+        }
+      }
+    }
+  }
+}
