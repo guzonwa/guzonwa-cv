@@ -1,32 +1,40 @@
 import React from "react";
-import styles from "./Home.module.scss";
 import Typing from "react-typing-animation";
+import "./Home.scss";
 
 const Home = () => (
-  <div className={styles.Home} data-testid="Home">
-    <Typing speed={30}>
+  <div className="Home" data-testid="Home">
+    <Typing
+      speed={40}
+      className="biography-section"
+      cursorClassName="home-cursor"
+    >
       <h3>
         Name: <strong>Uzonwa</strong> George,
         <br />
         <Typing.Delay ms={200} />
-        Phone No: (204)-898-1749,
+        <strong>Phone</strong> No: <strong>(204)</strong>-898-1749,
         <br />
         <Typing.Delay ms={200} />
-        Email: g.uzonwa@gmail.com,
+        Email: <strong>g.uzonwa@gmail.com,</strong>
         <Typing.Delay ms={900} />
         <Typing.Backspace count={10} />
-        hotmail.com,
+        <strong>hotmail.com,</strong>
       </h3>
       <Typing.Delay ms={750} />
       <h1>
-        <strong>FULL STACK DEVELOPER</strong>
+        Full Stack <strong>Developer</strong>
       </h1>
       <Typing.Delay ms={750} />
       <p>
-        Winnipeg <strong>MB</strong>
+        Winnipeg <strong>| MB</strong>
       </p>
     </Typing>
   </div>
 );
+
+Home.propTypes = {};
+
+Home.defaultProps = {};
 
 export default Home;

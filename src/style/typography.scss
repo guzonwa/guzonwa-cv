@@ -1,0 +1,17 @@
+@font-face {
+  font-family: SourceCodeProM;
+  src: url(../fonts/SourceCodePro/SourceCodePro-Medium.ttf);
+}
+@font-face {
+  font-family: SourceCodePro;
+  src: url(../fonts/SourceCodePro/SourceCodePro-Regular.ttf);
+}
+
+// fonts
+$biographyFont: SourceCodeProM, SourceCodePro, Calibri, sans-serif;
+
+// colour-theme
+$aqua: #72deff;
+$orange: #ff6859;
+$yellow: #ffcf44;
+$purple: #b15dff;
