@@ -1,15 +1,16 @@
+@use "sass:meta";
+@import "../../style/layout.scss";
 @import "../../style/typography.scss";
 
 .Home {
-  .biography-section {
-    font-family: $biographyFont;
+  .page-layout {
     .home-cursor {
-        color: $yellow;
+      color: $yellow;
     }
 
     h3 {
       color: $orange;
-      margin-bottom: 0.5em;
+      margin: 0;
       .home-cursor {
         color: $orange;
       }
@@ -23,7 +24,7 @@
     }
 
     h1 {
-      margin: 0;
+      margin-bottom: 0;
       color: $purple;
       .home-cursor {
         color: $purple;
@@ -37,8 +38,8 @@
     }
 
     p {
-      margin: 0;
       color: $orange;
+      margin: 0;
       .home-cursor {
         color: $orange;
       }

@@ -1,0 +1,40 @@
+@import "./typography.scss";
+
+.page-layout {
+  font-family: $siteFont;
+  background-color: $siteBackground;
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 10em;
+  justify-content: center;
+  font-size: calc(10px + 1.5vmin);
+  color: $yellow;
+}
+
+.tab-list {
+  list-style: none;
+  display: inline-flex;
+  max-height: 5vh;
+  margin: 0 0 0 0;
+  padding: 0.4em;
+}
+
+.tab-item {
+  color: $orange;
+  background-color: $siteBackground;
+  border-bottom: 1px solid $yellow;
+  justify-content: space-evenly;
+  padding: 0 2em 0 2em;
+  cursor: pointer;
+}
+
+.tab-item-active {
+  color: $yellow;
+  border: solid $yellow;
+  justify-content: space-evenly;
+  padding: 0 2em 0 2em;
+  background-color: $siteBackground;
+  border-width: 1px 1px 0 1px;
+  cursor: pointer;
+}
