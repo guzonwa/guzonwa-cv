@@ -1,1 +1,5 @@
-.Tabs {}
+@import "../../style/layout.scss";
+
+.Tabs {
+  background-color: $siteBackground;
+}

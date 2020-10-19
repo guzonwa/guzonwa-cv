@@ -17,28 +17,32 @@ const Tabs = (props) => {
   return (
     <div className="Tabs" data-testid="Tabs">
       <ol className="tab-list">
-        {/* display the tabs */}
-        {props.children.map((child) => {
-          // label is the name of the tab
-          const label = child.props.label;
-          return (
-            <Tab
-              activeTab={state.activeTab}
-              key={label}
-              label={label}
-              onClick={onClickTabItem}
-            />
-          );
-        })}
+        {
+          // display the tabs
+          props.children.map((child) => {
+            // label is the name of the tab
+            const label = child.props.label;
+            return (
+              <Tab
+                activeTab={state.activeTab}
+                key={label}
+                label={label}
+                onClick={onClickTabItem}
+              />
+            );
+          })
+        }
       </ol>
-      <div className="tab-content">
-        {/* loop through children(tabs) to display the tab content */}
-        {props.children.map((child) => {
-          // if current tab is active, return its properties
-          return child.props.label === state.activeTab
-            ? child.props.children
-            : undefined;
-        })}
+      <div>
+        {
+          // loop through children(tabs) to display the tab content
+          props.children.map((child) => {
+            // if current tab is active, return its properties
+            return child.props.label === state.activeTab
+              ? child.props.children
+              : undefined;
+          })
+        }
       </div>
     </div>
   );

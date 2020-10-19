@@ -4,11 +4,8 @@ import "./Home.scss";
 
 const Home = () => (
   <div className="Home" data-testid="Home">
-    <Typing
-      speed={40}
-      className="biography-section"
-      cursorClassName="home-cursor"
-    >
+    <div className="page-layout">
+    <Typing speed={30} cursorClassName="home-cursor">
       <h3>
         Name: <strong>Uzonwa</strong> George,
         <br />
@@ -30,6 +27,7 @@ const Home = () => (
         Winnipeg <strong>| MB</strong>
       </p>
     </Typing>
+    </div>
   </div>
 );
 

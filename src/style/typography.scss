@@ -1,4 +1,12 @@
 @font-face {
+  font-family: SpaceMono;
+  src: url(../fonts/SpaceMono/SpaceMono-Regular.ttf);
+}
+@font-face {
+  font-family: SpaceMonoB;
+  src: url(../fonts/SpaceMono/SpaceMono-Bold.ttf);
+}
+@font-face {
   font-family: SourceCodeProM;
   src: url(../fonts/SourceCodePro/SourceCodePro-Medium.ttf);
 }
@@ -8,10 +16,14 @@
 }
 
 // fonts
-$biographyFont: SourceCodeProM, SourceCodePro, Calibri, sans-serif;
+$siteFont: SpaceMono, SourceCodePro, SpaceMonoB, SourceCodeProM, Calibri,
+  sans-serif;
 
-// colour-theme
+// colors
 $aqua: #72deff;
 $orange: #ff6859;
 $yellow: #ffcf44;
 $purple: #b15dff;
+
+// home color scheme
+$siteBackground: #232425;

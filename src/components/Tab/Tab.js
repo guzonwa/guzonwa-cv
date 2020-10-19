@@ -1,6 +1,6 @@
+import "./Tab.scss";
 import React from "react";
 import PropTypes from "prop-types";
-import "./Tab.scss";
 
 const Tab = (props) => {
   // instantiate the passed in props
